@@ -36,7 +36,7 @@ export function QueryHeatmap({ data }: QueryHeatmapProps) {
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <Activity className="h-5 w-5 text-primary" />
-          <CardTitle>Query Volume by Day/Hour</CardTitle>
+          <CardTitle>Brain Activity Patterns</CardTitle>
         </div>
       </CardHeader>
       <CardContent>

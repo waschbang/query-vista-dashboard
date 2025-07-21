@@ -36,7 +36,7 @@ export function WordCloud({ data }: WordCloudProps) {
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <MessageCircle className="h-5 w-5 text-primary" />
-          <CardTitle>Most Common Query Terms</CardTitle>
+          <CardTitle>Knowledge Topics & Concepts</CardTitle>
         </div>
       </CardHeader>
       <CardContent>

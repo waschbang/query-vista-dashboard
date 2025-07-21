@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Brain } from "lucide-react";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Sidebar } from "@/components/dashboard/Sidebar";
 import { MetricsCards } from "@/components/dashboard/MetricsCards";
 import { QueryLineChart } from "@/components/dashboard/QueryLineChart";
@@ -33,13 +35,21 @@ const Index = () => {
         {/* Main Content */}
         <div className="flex-1 p-6">
           {/* Header */}
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-foreground mb-2">
-              Analytics Dashboard
-            </h1>
-            <p className="text-muted-foreground">
-              Monitor user queries and conversation patterns across AI models
-            </p>
+          <div className="mb-8 flex items-center justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="p-2 rounded-lg bg-gradient-to-r from-primary to-accent">
+                  <Brain className="h-6 w-6 text-white" />
+                </div>
+                <h1 className="text-3xl font-bold text-foreground">
+                  Second Brain Dashboard
+                </h1>
+              </div>
+              <p className="text-muted-foreground">
+                Monitor AI conversations and knowledge interactions across your digital brain
+              </p>
+            </div>
+            <ThemeToggle />
           </div>
 
           {/* Metrics Cards */}

@@ -16,7 +16,7 @@ export function QueryLineChart({ data }: QueryLineChartProps) {
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <TrendingUp className="h-5 w-5 text-primary" />
-          <CardTitle>Queries Over Time</CardTitle>
+          <CardTitle>Knowledge Interactions Over Time</CardTitle>
         </div>
       </CardHeader>
       <CardContent>

@@ -44,10 +44,10 @@ export function ConversationsTable({ data }: ConversationsTableProps) {
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <MessageSquare className="h-5 w-5 text-primary" />
-          <CardTitle>Recent Conversations</CardTitle>
+          <CardTitle>Recent Knowledge Sessions</CardTitle>
         </div>
         <Badge variant="secondary" className="bg-primary/10 text-primary">
-          {data.length} conversations
+          {data.length} sessions
         </Badge>
       </CardHeader>
       <CardContent>

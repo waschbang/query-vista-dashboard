@@ -36,7 +36,7 @@ export function MetricsCards({ data }: MetricsCardsProps) {
       gradient: "bg-gradient-to-r from-green-500 to-green-600"
     },
     {
-      title: "Most Queried Brand",
+      title: "Most Active AI Model",
       value: data.mostQueriedBrand,
       change: "OpenAI",
       icon: Award,
