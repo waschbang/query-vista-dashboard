@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				dashboard: {
+					bg: 'hsl(var(--dashboard-bg))',
+					card: 'hsl(var(--dashboard-card))',
+					border: 'hsl(var(--dashboard-border))'
+				},
+				chart: {
+					1: 'hsl(var(--chart-primary))',
+					2: 'hsl(var(--chart-secondary))',
+					3: 'hsl(var(--chart-tertiary))',
+					4: 'hsl(var(--chart-quaternary))',
+					5: 'hsl(var(--chart-quinary))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

@@ -8,35 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 217 27% 94%;
+    --foreground: 217 33% 17%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 217 33% 17%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 217 33% 17%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 213 94% 68%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217 27% 94%;
+    --secondary-foreground: 217 33% 17%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 217 33% 97%;
+    --muted-foreground: 217 21% 51%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 213 94% 68%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 217 33% 89%;
+    --input: 217 33% 89%;
+    --ring: 213 94% 68%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Dashboard specific colors */
+    --dashboard-bg: 217 27% 94%;
+    --dashboard-card: 0 0% 100%;
+    --dashboard-border: 217 33% 89%;
+    
+    /* Chart colors */
+    --chart-primary: 213 94% 68%;
+    --chart-secondary: 262 90% 70%;
+    --chart-tertiary: 142 90% 70%;
+    --chart-quaternary: 47 90% 70%;
+    --chart-quinary: 10 90% 70%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(213 94% 68%), hsl(213 94% 78%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(217 33% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(217 33% 17% / 0.1), 0 2px 4px -1px hsl(217 33% 17% / 0.06);
+    --shadow-hover: 0 10px 15px -3px hsl(217 33% 17% / 0.1), 0 4px 6px -2px hsl(217 33% 17% / 0.05);
 
     --sidebar-background: 0 0% 98%;
 

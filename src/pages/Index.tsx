@@ -1,11 +1,67 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import { Sidebar } from "@/components/dashboard/Sidebar";
+import { MetricsCards } from "@/components/dashboard/MetricsCards";
+import { QueryLineChart } from "@/components/dashboard/QueryLineChart";
+import { BrandBarChart } from "@/components/dashboard/BrandBarChart";
+import { WordCloud } from "@/components/dashboard/WordCloud";
+import { QueryHeatmap } from "@/components/dashboard/QueryHeatmap";
+import { ConversationsTable } from "@/components/dashboard/ConversationsTable";
+import { 
+  mockMetrics, 
+  mockLineChartData, 
+  mockBrandData, 
+  mockWordCloudData, 
+  mockHeatmapData, 
+  mockConversations 
+} from "@/data/mockData";
 
 const Index = () => {
+  const [filters, setFilters] = useState({});
+
+  const handleFilterChange = (newFilters: any) => {
+    setFilters(newFilters);
+    // In a real app, this would trigger data refetching
+    console.log("Filters changed:", newFilters);
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-dashboard-bg">
+      <div className="flex">
+        {/* Sidebar */}
+        <Sidebar onFilterChange={handleFilterChange} />
+        
+        {/* Main Content */}
+        <div className="flex-1 p-6">
+          {/* Header */}
+          <div className="mb-8">
+            <h1 className="text-3xl font-bold text-foreground mb-2">
+              Analytics Dashboard
+            </h1>
+            <p className="text-muted-foreground">
+              Monitor user queries and conversation patterns across AI models
+            </p>
+          </div>
+
+          {/* Metrics Cards */}
+          <div className="mb-8">
+            <MetricsCards data={mockMetrics} />
+          </div>
+
+          {/* Charts Row 1 */}
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
+            <QueryLineChart data={mockLineChartData} />
+            <BrandBarChart data={mockBrandData} />
+          </div>
+
+          {/* Charts Row 2 */}
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 mb-8">
+            <WordCloud data={mockWordCloudData} />
+            <QueryHeatmap data={mockHeatmapData} />
+          </div>
+
+          {/* Conversations Table */}
+          <ConversationsTable data={mockConversations.slice(0, 20)} />
+        </div>
       </div>
     </div>
   );
