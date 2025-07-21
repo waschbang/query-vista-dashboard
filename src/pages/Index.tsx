@@ -38,8 +38,8 @@ const Index = () => {
           <div className="mb-8 flex items-center justify-between">
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <div className="p-2 rounded-lg bg-gradient-to-r from-primary to-accent">
-                  <Brain className="h-6 w-6 text-white" />
+                <div className="p-2 rounded-lg bg-gradient-to-r from-gray-900 to-black dark:from-gray-100 dark:to-gray-300">
+                  <Brain className="h-6 w-6 text-white dark:text-gray-900" />
                 </div>
                 <h1 className="text-3xl font-bold text-foreground">
                   Second Brain Dashboard

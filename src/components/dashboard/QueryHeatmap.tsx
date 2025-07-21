@@ -32,7 +32,7 @@ export function QueryHeatmap({ data }: QueryHeatmapProps) {
   };
 
   return (
-    <Card className="bg-dashboard-card shadow-[var(--shadow-card)]">
+    <Card className="premium-card bg-dashboard-card">
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <Activity className="h-5 w-5 text-primary" />

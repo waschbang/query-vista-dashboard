@@ -27,7 +27,7 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
   };
 
   return (
-    <Card className="w-80 h-full p-6 border-r bg-dashboard-card">
+    <Card className="premium-glass w-80 h-full p-6 border-r bg-dashboard-card">
       <div className="flex items-center gap-2 mb-6">
         <Filter className="h-5 w-5 text-primary" />
         <h2 className="text-lg font-semibold">Smart Filters</h2>
@@ -110,7 +110,7 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
 
         {/* Reset Filters */}
         <Button 
-          variant="outline" 
+          variant="premium" 
           className="w-full"
           onClick={() => {
             setFilters({

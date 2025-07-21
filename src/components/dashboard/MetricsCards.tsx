@@ -19,28 +19,28 @@ export function MetricsCards({ data }: MetricsCardsProps) {
       value: data.totalConversations.toLocaleString(),
       change: "+12.3%",
       icon: MessageSquare,
-      gradient: "bg-gradient-to-r from-blue-500 to-blue-600"
+      gradient: "bg-gradient-to-r from-gray-800 to-gray-900"
     },
     {
       title: "Total Messages",
       value: data.totalMessages.toLocaleString(),
       change: "+8.7%",
       icon: Users,
-      gradient: "bg-gradient-to-r from-purple-500 to-purple-600"
+      gradient: "bg-gradient-to-r from-gray-700 to-gray-800"
     },
     {
       title: "Avg. Messages/Conversation",
       value: data.avgMessagesPerConversation.toFixed(1),
       change: "-2.1%",
       icon: TrendingUp,
-      gradient: "bg-gradient-to-r from-green-500 to-green-600"
+      gradient: "bg-gradient-to-r from-gray-600 to-gray-700"
     },
     {
       title: "Most Active AI Model",
       value: data.mostQueriedBrand,
       change: "OpenAI",
       icon: Award,
-      gradient: "bg-gradient-to-r from-orange-500 to-orange-600"
+      gradient: "bg-gradient-to-r from-black to-gray-800"
     }
   ];
 
@@ -51,7 +51,7 @@ export function MetricsCards({ data }: MetricsCardsProps) {
         const isNegative = metric.change.startsWith("-");
         
         return (
-          <Card key={index} className="relative overflow-hidden bg-dashboard-card shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-hover)] transition-all duration-200">
+          <Card key={index} className="premium-card relative overflow-hidden bg-dashboard-card">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
               <CardTitle className="text-sm font-medium text-muted-foreground">
                 {metric.title}

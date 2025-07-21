@@ -21,12 +21,12 @@ interface ConversationsTableProps {
 export function ConversationsTable({ data }: ConversationsTableProps) {
   const getBrandColor = (brand: string) => {
     const colors: { [key: string]: string } = {
-      'OpenAI': 'bg-green-100 text-green-800',
-      'Anthropic': 'bg-blue-100 text-blue-800',
-      'Google': 'bg-red-100 text-red-800',
-      'Microsoft': 'bg-purple-100 text-purple-800',
+      'OpenAI': 'bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100',
+      'Anthropic': 'bg-gray-200 text-gray-900 dark:bg-gray-700 dark:text-gray-200',
+      'Google': 'bg-gray-300 text-gray-900 dark:bg-gray-600 dark:text-gray-100',
+      'Microsoft': 'bg-gray-400 text-gray-900 dark:bg-gray-500 dark:text-gray-100',
     };
-    return colors[brand] || 'bg-gray-100 text-gray-800';
+    return colors[brand] || 'bg-gray-50 text-gray-700 dark:bg-gray-900 dark:text-gray-300';
   };
 
   const formatDate = (dateString: string) => {
@@ -40,7 +40,7 @@ export function ConversationsTable({ data }: ConversationsTableProps) {
   };
 
   return (
-    <Card className="bg-dashboard-card shadow-[var(--shadow-card)]">
+    <Card className="premium-card bg-dashboard-card">
       <CardHeader className="flex flex-row items-center justify-between">
         <div className="flex items-center gap-2">
           <MessageSquare className="h-5 w-5 text-primary" />
